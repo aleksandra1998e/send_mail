@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Flask + Celery </title>
+    </head>
+
+    <body>
+        <h1>Flask + Celery</h1>
+<form method="POST">
+    Email: <input id="email" name="email" type="email"><br/>
+    Password: <input id="password" name="password" type="text"><br/>
+    Topic: <input id="topic" name="topic" type="text"><br/>
+    Message: <textarea id="textarea" name="message"
+                       placeholder="Don't forget to add '<img src='server/opened/(mail)' width='1px' height='1px' />' for tracking"
+                       rows="5"></textarea><br/>
+    Duration: <input id="duration" name="duration" placeholder="Enter duration as a number. for example: 3" type="text"><br/>
+
+   <select name="duration_unit">
+      <option value="" disabled selected>Choose the duration</option>
+      <option value="1">Minutes</option>
+      <option value="2">Hours</option>
+      <option value="3">Days</option>
+   </select>
+   <p> Variables in letter: </p>
+    <input class="var" name="name" type="checkbox">Name<br/>
+    <input class="var" name="surname" type="checkbox">Surname<br/>
+    <input class="var" name="birthday" type="checkbox">Birthday<br/>
+    <h6>*in the letter template, variables must be specified in parentheses. <br/>
+        example: (name), (surname), (birthday)</h6>
+    <img src='http://127.0.0.1:5000/opened/dfg' width='1px' height='1px' />
+   <button type="submit" name="action">Submit </button>
+</form>
+</body>
+</html>
